@@ -43,4 +43,6 @@ func main() {
 	testIt(rawStr)
 	rawStr = "Hello, 世界！"
 	testIt(rawStr)
+	rawStr = "https://github.com/youngsterxyf/xiaBase64/blob/master/example/test.go"
+	testIt(rawStr)
 }
