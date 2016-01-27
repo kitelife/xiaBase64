@@ -5,7 +5,7 @@ import (
 	"log"
 	"strings"
 
-	"xiaBase64"
+	"github.com/youngsterxyf/xiaBase64"
 )
 
 func testIt(rawStr string) {
