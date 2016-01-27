@@ -43,5 +43,13 @@ func Decode(input []byte) ([]byte, error) {
 		pos = pos + 4
 	}
 
+	byteCount = len(beforeBase64)
+	if beforeBase64[byteCount-1] == 0x0 {
+		beforeBase64 = beforeBase64[0 : byteCount-1]
+	}
+	if beforeBase64[byteCount-2] == 0x0 {
+		beforeBase64 = beforeBase64[0 : byteCount-2]
+	}
+
 	return beforeBase64, nil
 }
